@@ -1,0 +1,21 @@
+body {
+    margin: 1rem 10rem;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.articoloColonna1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sideSection>h2 {
+    font-size: 1.1rem;
+}
+
+#racommendedTopics div{
+    display:inline-block;
+    background-color: grey;
+    border-radius: 1rem;
+    padding:0.5rem;
+}
