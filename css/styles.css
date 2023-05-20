@@ -1,5 +1,5 @@
 body {
-  margin: 1rem 10rem;
+  /*margin: 1rem 10rem;*/
   text-align: left;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -13,10 +13,12 @@ a:visited{
 }
 
 header{
+    padding: 1rem 10rem;
     display:flex;
     justify-content: space-between;
     align-items: center;
     /*background-color: orange;*/
+    box-shadow: 0 0 0.8rem rgba(200, 200, 200,0.8);
 }
 
 header ul{
@@ -39,6 +41,23 @@ header ul{
 }
 
 #userProfile a:visited{color:white; }
+
+main{
+    margin: 4rem 10rem;
+}
+
+#bachecaNav{
+    border-bottom: 1px solid grey;
+    color: grey;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+
+}
+#bachecaNav>p{
+    margin: auto 1rem;
+}
+
 
 .articoloColonna1 h2 {
   font-weight: 600;
