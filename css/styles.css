@@ -1,21 +1,86 @@
 body {
-    margin: 1rem 10rem;
-    text-align: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+  margin: 1rem 10rem;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.articoloColonna1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+a {
+  text-decoration: none;
 }
 
-.sideSection>h2 {
-    font-size: 1.1rem;
+a:visited{
+    color:grey;
 }
 
-#racommendedTopics div{
-    display:inline-block;
-    background-color: grey;
-    border-radius: 1rem;
-    padding:0.5rem;
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: orange;*/
 }
+
+header ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:25%;
+}
+
+#userProfile{
+    display: inline-flex;
+    background-color: #f4511e;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color:white;    
+}
+
+#userProfile a:visited{color:white; }
+
+.articoloColonna1 h2 {
+  font-weight: 600;
+}
+
+.articoloColonna1 p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.sideSection h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.userSmallData {
+  font-size: 0.8rem;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+.userSmallData span {
+  font-weight: 600;
+}
+
+
+#racommendedTopics div {
+  display: inline-block;
+  background-color: grey;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.simpleButton a {
+  display: inline-block;
+  color: rgb(77, 77, 77);
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+#recentlySaved h3 {
+    font-weight: 600;
+  }
+  
+  #savedArticleLink {
+      color: green;
+  }
