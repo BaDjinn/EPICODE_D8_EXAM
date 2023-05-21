@@ -38,21 +38,11 @@ header{
         header ul li:nth-of-type(3){
             margin:0 1rem;
         }
+        header ul li:last-of-type{
+            margin:0 1rem;
+        }
 
-    #userProfile{
-        display: inline-flex;
-        background-color: #f4511e;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        color:white;
-        white-space: nowrap;
     
-    }
-
     #userProfile a:visited{color:white; }
 
 /*------------MAIN----------*/    
@@ -199,9 +189,10 @@ main{
 /*font size reference in --main--*/
 
 .sideSection h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
   text-overflow: ellipsis;
+  padding-bottom: 1em;
 }
 
 .userSmallData{
@@ -222,6 +213,9 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(210, 210, 210,0.8);
+
 }
     #withTwitter>h2>img{
         width: 30%;
@@ -248,12 +242,26 @@ main{
         padding-right: 1em;
     }
 
-#racommendedTopics div {
-  display: inline-block;
-  background-color: rgba(200, 200, 200,0.8);
-  border-radius: 1rem;
-  padding: 0.5rem;
-}
+/*------RECOMMENDED TOPICS-----*/
+
+    #racommendedTopics{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    #topics {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+        #topics div {
+            display: inline-block;
+            background-color: rgba(200, 200, 200,0.8);
+            border-radius: 1em;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
 
 .simpleButton a {
   display: inline-block;
@@ -263,9 +271,57 @@ main{
   padding: 0.5em;
 }
 
+/*----WHOTOFOLLOW----*/
+
+#whoToFollow{
+    display: flex;
+    flex-direction: column;
+}
+
+    #whoToFollow>div{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em 0;
+    }
+    #whoToFollow>div>img
+    {
+        width: 15%;
+        height: auto;
+    }
+    #whoToFollow>div>div{
+        flex-grow: 2;
+        padding-left: 1em;
+    }
+    #whoToFollow>div>div>p
+    {
+        font-size: 0.8em;
+        padding: 0.5em 0;
+        color:gray;
+    }
+    #whoToFollow>div>div>p:first-of-type
+    {
+        font-weight: 700;
+        color: black;
+    }
+
+/*------RECENTLYSAVED-------*/
+
+#recentlySaved{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
 #recentlySaved h3 {
     font-weight: 600;
   }
+.savedSmallData{
+    display: flex;
+    
+    padding: 0.3rem 0 0 0;
+    
+}
   
   #savedArticleLink {
       color: green;
