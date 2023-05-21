@@ -17,73 +17,240 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /*background-color: orange;*/
     box-shadow: 0 0 0.8rem rgba(200, 200, 200,0.8);
 }
 
-header ul{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    width:25%;
-}
+    header ul{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        align-items: center;
+        text-overflow: ellipsis;
+        width:25%;
+    }
+        header ul li:nth-of-type(1){
+            margin:0 1rem;
+        }
+        header ul li:nth-of-type(2){
+            margin:0 1rem;
+        }
+        header ul li:nth-of-type(3){
+            margin:0 1rem;
+        }
 
-#userProfile{
-    display: inline-flex;
-    background-color: #f4511e;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color:white;    
-}
+    #userProfile{
+        display: inline-flex;
+        background-color: #f4511e;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color:white;
+        white-space: nowrap;
+    
+    }
 
-#userProfile a:visited{color:white; }
+    #userProfile a:visited{color:white; }
 
+/*------------MAIN----------*/    
 main{
-    margin: 4rem 10rem;
-}
-
-#bachecaNav{
-    border-bottom: 1px solid grey;
-    color: grey;
+    margin: 0 10rem;
     display: flex;
-    flex-direction:row;
-    justify-content:flex-start;
-
-}
-#bachecaNav>p{
-    margin: auto 1rem;
 }
 
+    div#colonnaPrincipale{
+        width: 70%;
+        margin-right: 2rem;
+        padding-top: 4rem;
+    }
+    
+    div#colonnaLaterale{
+        width:30%;
+        margin-left: 2rem;
+        padding-top: 4rem;
+        padding-left: 4rem;
+        border-left:1px solid rgba(200, 200, 200,0.8);
+        font-size: 0.9rem;
+    }
 
-.articoloColonna1 h2 {
-  font-weight: 600;
-}
+/*Nav bar*/
 
-.articoloColonna1 p {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
+    #bachecaNav{
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+    }
+
+        #bachecaNav>p{
+            margin: auto 0;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0 1rem 1rem 1rem;
+            border-bottom: 1px solid rgba(200, 200, 200,0.8);
+            color: grey;
+        }
+
+        #bachecaNav>p:nth-of-type(2){
+            color: black;
+            border-bottom: 1px solid black;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+        }
+
+        #bachecaNav>p:nth-of-type(2)>a:visited{
+            color: black;            
+        }
+
+        #bachecaNav>p:last-of-type{
+            width: 100%;
+            margin:0;
+
+        }
+
+/*BACHECA*/
+    .articolo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .articoloColonna1{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        color: grey;
+    }
+
+        .articoloColonna1 a:visited{
+            color: black;
+        }
+
+        .articoloColonna1 h2{
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-overflow: ellipsis;
+        padding:0 0 0.5rem;
+        color: black;
+        }
+
+    .articoloExtract {
+        /*font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;*/
+        text-overflow: ellipsis;
+        font-size: 1rem;
+        color: grey;
+    }
+        .articoloExtract>a:visited{
+            color: grey;
+        }
+
+    .articoloSmallData{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.3rem 0 0 0;
+        
+    }
+        .articoloSmallData a:visited{
+            color: grey;
+        }
+
+            .articoloSmallData>div{
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+            }
+
+                .articoloSmallData>div p{
+                    padding: 0.5em 0.5em 0.5em 0;
+                }
+                .articoloSmallData>div p:nth-last-child(2){
+                    padding: 0.5em;
+                }
+
+            .articoloSmallData>ul {
+                display: flex;
+                align-items: center;        
+            }
+
+                .articoloSmallData>ul li{
+                    padding: 1em 1em 0 0;
+                } 
+
+        .smallTag{
+                background-color: rgba(200, 200, 200,0.8);
+                border-radius: 1em;
+                padding:0.5em !important;
+                /*padding: 0.5rem;*/
+        }
+
+        .articoloColonna2{
+            width: 25%;
+        }
+        .articoloColonna2>img{
+            width: 100%;
+            height: auto;
+        }
+
+
+
+/*----------SIDE SECTION------------*/
+/*font size reference in --main--*/
 
 .sideSection h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-overflow: ellipsis;
 }
 
-.userSmallData {
-  font-size: 0.8rem;
-  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+.userSmallData{
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+.userSmallData p{
+    padding: 1.5em 1em 1em 0.5em;
+    flex-wrap: nowrap;
 }
 .userSmallData span {
   font-weight: 600;
 }
 
+#withTwitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+    #withTwitter>h2>img{
+        width: 30%;
+        height: auto;
+    }
+    #withTwitter>p{
+        padding: 1em;
+    }
+
+    #withTwitter>div{
+        width: 60%;
+        white-space: nowrap;
+    }
+    #withTwitter>div>a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #withTwitter>div>a>img{
+        width: 10%;
+        height: auto;
+        padding-right: 1em;
+    }
 
 #racommendedTopics div {
   display: inline-block;
-  background-color: grey;
+  background-color: rgba(200, 200, 200,0.8);
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -92,8 +259,8 @@ main{
   display: inline-block;
   color: rgb(77, 77, 77);
   border: 1px solid grey;
-  border-radius: 1rem;
-  padding: 0.5rem;
+  border-radius: 2em;
+  padding: 0.5em;
 }
 
 #recentlySaved h3 {
