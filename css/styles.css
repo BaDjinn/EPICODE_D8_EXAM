@@ -64,6 +64,10 @@ main{
         padding-left: 4rem;
         border-left:1px solid rgba(200, 200, 200,0.8);
         font-size: 0.9rem;
+        height:fit-content;
+
+        position: sticky;
+        top:-19.5rem;
     }
 
 /*Nav bar*/
@@ -195,6 +199,9 @@ main{
   padding-bottom: 1em;
 }
 
+.sideSection h2 a:visited{
+    color: black;
+}
 .userSmallData{
     display: flex;
     align-items: center;
@@ -207,7 +214,10 @@ main{
 .userSmallData span {
   font-weight: 600;
 }
-
+.userSmallData span a:visited{
+    color: black;
+}
+/*-----WITHTWITTER----------*/
 #withTwitter{
     display: flex;
     flex-direction: column;
@@ -226,8 +236,12 @@ main{
     }
 
     #withTwitter>div{
+        display: flex;
+        justify-content: center;
+        text-align: center;
         width: 60%;
         white-space: nowrap;
+        margin:0 auto;
     }
     #withTwitter>div>a{
         display: flex;
@@ -241,6 +255,10 @@ main{
         height: auto;
         padding-right: 1em;
     }
+#withTwitter>a{
+    text-decoration:underline;
+}
+
 
 /*------RECOMMENDED TOPICS-----*/
 
@@ -316,13 +334,41 @@ main{
 #recentlySaved h3 {
     font-weight: 600;
   }
+
+#recentlySaved a:visited{
+        color: black;
+    }  
+.savedArticle{
+    padding: 0.5em 0;
+}
 .savedSmallData{
     display: flex;
-    
-    padding: 0.3rem 0 0 0;
-    
+    padding: 0.8em 0;
+    color: grey;   
+}
+.savedSmallData *{
+    padding: 0.3em 0.5em 0 0;
+    font-size: 0.8em;
+
 }
   
   #savedArticleLink {
       color: green;
+      margin: 1em 0;
   }
+  #savedArticleLink:visited{
+        color: green !important; 
+  }
+
+/*------FOOTER------*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:1em;
+}
+footer div{
+    margin: 0.5em;
+
+}
+
